@@ -187,7 +187,7 @@
 				let id = this.$route.params.id
 				axios.patch('/api/product/'+id, this.form)
 				.then(response => {
-					// this.$router.push({name: 'all-product'})
+					this.$router.push({name: 'all-product'})
 					Notification.success();
 					console.log(response.data)
 				})

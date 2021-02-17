@@ -157,12 +157,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
                 <li class="nav-item bg-info">
-                  <a href="#" class="nav-link">
+                  <router-link to="/pos" class="nav-link">
                     <i class="nav-icon fas fa-th"></i>
                     <p>
                       <b class="text-light">POS</b>
                     </p>
-                  </a>
+                  </router-link>
                 </li>
                 <li class="nav-item">
                   <router-link to="/home" class="nav-link">

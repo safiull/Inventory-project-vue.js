@@ -40,7 +40,7 @@ class ProductController extends Controller
         // return response()->json($request->all());
         $request->validate([
             'category_id' => 'required',
-            'product_name' => 'required|min:2|max:15|unique:products',
+            'product_name' => 'required|min:2|max:100|unique:products',
             'buying_price' => 'required',
             'supplier_id' => 'required',
         ]);
@@ -109,7 +109,7 @@ class ProductController extends Controller
         // return $request->buying_price;
         $request->validate([
             'category_id' => 'required',
-            'product_name' => 'required|min:2|max:15|unique:products,product_name,' .$id,
+            'product_name' => 'required|min:2|max:100|unique:products,product_name,' .$id,
             'buying_price' => 'required',
             'supplier_id' => 'required',
         ]);

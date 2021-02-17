@@ -121,6 +121,11 @@ export const routes = [
     component: require('./components/salary/viewSalary.vue').default,
     name: 'view-salary',
   },
+  {
+    path: '/pos',
+    component: require('./components/pos/pos.vue').default,
+    name: 'pos',
+  },
 
   // { 
   //   path: '/reset-password', 

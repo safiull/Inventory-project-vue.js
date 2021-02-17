@@ -29,3 +29,6 @@ Route::apiResource('/expense', 'ExpenseController');
 Route::post('giveSalary/{id}', 'SalaryController@salaryPaid');
 Route::get('salary/', 'SalaryController@allSalary');
 Route::get('/salary/view/{id}', 'SalaryController@viewSalary');
+
+
+Route::get('/subProduct/{id}', 'PosController@subProduct');
